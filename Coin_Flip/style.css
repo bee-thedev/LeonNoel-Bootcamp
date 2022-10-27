@@ -16,11 +16,16 @@ body{
     justify-content: center;
 }
 
+h1{
+    color: red;
+}
+
 .button{
     margin-top: 3%;
     height: 60px;
     width: 300px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 img{
@@ -35,5 +40,23 @@ img{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.result{
+    margin-top: 5%;
+}
+
+/* ================================= Media Query ==========================*/
+
+@media screen and (max-width: 600px){
+   .container{
+    margin-top: 6%;
+   }
+   .result{
+    margin-top: 3%;
+   }
+   button{
+    cursor: pointer;
+   }
 }
 
