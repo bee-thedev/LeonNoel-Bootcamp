@@ -48,7 +48,7 @@ app.get('/', (request, response)=>{
 })
 
 app.get('/api/:playerName', (request, response)=>{
-    let topper = request.params.playerName;
+    let topper = request.params.playerName.toLowerCase();
     console.log(topper)
     if(players[topper]){
         console.log(response.json(players[topper]));
